@@ -39,8 +39,13 @@ hr{
   background-color: #34493E;
   border:none;
 }
-
-
+h1, h2, h3, .title{
+font-family: var(--main-font);
+font-weight: 900;  
+}
+.title{
+  color: var(--accent-color);
+}
 
 
 
