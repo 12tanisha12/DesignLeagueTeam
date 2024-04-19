@@ -55,7 +55,9 @@ container.appendChild (coinimg);
 $( '#coin-img').animate({ top: '60%', opacity: 1 }, 250);
 $('#coin-img'),animatel{ top: '70%', opacity: 0 }, 250, () => {
 $( '#coin-img'). remove();
-button.style.setProperty('background-color', 'transparent'); button.style.setProperty('border-color', 'var(--accent-color)'); button.style.setProperty('color', 'var(--accent-color');
+button.style.setProperty('background-color', 'transparent');
+  button.style.setProperty('border-color', 'var(--accent-color)'); 
+  button.style.setProperty('color', 'var(--accent-color');
 }) :
 ｝；
 this-pipe = () = 1
@@ -65,10 +67,13 @@ this powerUp = (=>1
 powerUpSfx.play ();
 };
 }
+  
 const promptUser = () => 1
 let name = prompt( 'Pick a name:') || 'Ninja';
 let age;
-let height; let color;
+let height; 
+let color;
+
 this.getAge = () => {
 age = prompt( 'Pick an age:') || '18';
 age = parseInt (age);
@@ -81,62 +86,46 @@ return;
 this getHeight = ( → 1
 height = prompt( 'Pick height: 1, 2, 3, 4') || 4;
 height = parseInt (height);
-if（height =l= 1 11 height ＝=
+if（height =l= 1 || height ===2 || height === 3|| height === 4){
 height = height * 64;
 return;
-¿ else ‹
+}else {
 this.getHeight();
 }
-2 11 height === 3 || height ＝ニ= 4） 1 
+};
 
-this.getColor = () = 1
+this.getColor = () => {
 color = prompt( 'Choose color: Red Blue Green') || 'red';
 color = color.toLowerCase ();
-if
-(color ===
-'red'II color ==='blue' 11 color ==="green'） ｛
+if (color === 'red' || color ==='blue' || color === 'green'） ｛
 return;
 } else {
 this.getColor();
 }
-ふ
-this-appendImg = () → {
+};
+
+this.appendImg = () => {
 img = document.createElement ('img');
 let size = 'width:' + height + 'px;height:' + height + 'px;';
-if
-(color === 'blue') {
+if (color === 'blue') {
+img setAttribute( 'src', 'imgs/ninjal.png');
+img-setAttribute('style', size);
 container.appendChild (img);
 ｝
 else if
-container.appendChild (img);
-｝
-•else if
-(color === 'red') {
-container.appendChild (img);
-
-
-
-
-
-img setAttribute( 'src', 'imgs/ninjal.png');
-img-setAttribute('style', size);
-
-
-
 (color === 'green') {
-
-
 img setAttribute('src', 'imgs/ninja2.png');
 img.setAttribute('style', size);
-
-
-
-
-
-
+container.appendChild (img);
+｝
+else if
+(color === 'red') {
+container.appendChild (img); {
 img.setAttribute('src', 'imgs/ninja3.png');
 img setAttribute('style', size);
-
+}
+};
+  
 this.changeBtns = () → {
 const btn = document. querySelector('button');
 const btnContainer = document.querySelector('.btns-container');
