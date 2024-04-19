@@ -65,3 +65,22 @@ height:100vh;
 
 
 
+
+
+
+
+
+
+.top-container {
+  display: flex;
+  width: 100%;
+}
+
+.lab-info {
+  width: 50%;
+}
+
+.content {
+margin-top: 2rem;
+  width: 100%;
+}
