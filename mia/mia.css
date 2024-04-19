@@ -83,4 +83,35 @@ height:100vh;
 .content {
 margin-top: 2rem;
   width: 100%;
+  min-height: 500px;
+  position: relative;
+  border: 2px solid #ccc;
 }
+.btns-container {
+width: 50%;
+display: flex;
+justify-content: flex-end; 
+align-items: flex-end; 
+position: relative;
+}
+
+
+button {
+background-color: transparent;
+border: 2px solid var(—-accent-color);
+color: var(--accent-color);
+font-size: 2rem; 
+padding: 0.25em 1em;
+}
+#btnCoin,
+#btnPipe,
+#btnPowerUp {
+transition: all lease 100ms;
+outline: none !important;
+} 
+
+img {
+position: absolute;
+top: 70%; 
+left: 50%; transform: translate(-50%, -100%) ;
+  
