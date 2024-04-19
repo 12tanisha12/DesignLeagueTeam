@@ -54,6 +54,61 @@ this. powerUp = 0) → t powerUpSfx-play():
 }:
 
 
+const promptUser = () =›
+let name = prompt 'Pick
+let age;
+let height;
+let color;
+a name: ') |l
+'Ninja*:
+
+  this. getAge = () → (
+age = prompt ('Pick an age:") || *18*;
+age = parseInt(age);
+if (isNaN(age)) {
+this. getAge();
+else {
+return:
+1:
+  
+this-getHeight = () → {
+height = prompt( 'Pick height: 1, 2, 3, 4') || 4;
+height = parseInt (height) ;
+if (height === 1 || height === 2 || height == 3 || height === 4) €
+height = height * 64;
+return:
+else {
+this. getHeight();
+
+this getColor = () =>
+1
+color = prompt ( 'Choose color: Red Blue Green') |1 'red';
+color = color. toLowerCase (J:
+1f （color ===
+'red'
+color
+"blue' [| color === 'green') €
+return;
+} else t
+this getColor ():
+0
+1
+this.appendImg = () = f
+img = document. createElement (img*):
+let size = 'width:' + height + 'px;height:' + height + 'px; ';
+if (color === 'blue') (
+ing, setAttribute('src', *ings/ninjal.png');
+img. setAttribute( 'style', size); container.appendChild(imgl:
+} else if (color === 'green') €
+img. setAttribute('src', 'ings/ninja2-png*):
+img, setAttribute('style', size); container.appendChild (img) ;
+} else if (color === 'red') {
+img. setAttribute('src', 'imgs/ninja3-png' );
+img. setAttribute( 'style', size);
+container.appendChild (img) :
++
+
+                         
 
 
 
