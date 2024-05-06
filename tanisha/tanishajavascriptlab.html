@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+basic javascript
+</title>
+</head>
+<body>
+<h1>JS output below</h1>
+<p>My first paragraph</p>
+<p id="demo"> this will change with JS</p>
+<button type="button" onclick="addition()"> meow meow ADD 6 + 3 </button>
+<button type="button" onclick="division()"> DIVIDE 25 BY 5 </button>
+<button type="button" onclick="subtraction()"> SUBTRACT 9 BY 8 </button>
+<button type="button" onclick="multiply()"> MULTIPLY 4 AND 7 </button>
+<button type="button" onclick="greet()"> GREET</button>
+<div style="background-color:pink; width:100px; height:100px;" onmousemove="moveFunk(event)" onmouseout="clearColor()"></div>
+
+
+<button type="button" onclick="moveIt()">meow meow</button>
+<button type="button" onclick="moveIt?()">meow meow?</button>
+<div id="container"></div>
+
+<div id="animate"></div>
+
+<script>
+function addition(){
+document.getElementById("demo").innerHTML=6+3
+}
+
+
+
+function division(){
+document.getElementById("demo").innerHTML= 25/5
+}
+
+
+function subtraction(){
+document.getElementById("demo").innerHTML= 9-8
+}
+
+
+function multiply(){
+document.getElementById("demo").innerHTML=4*7
+}
+
+function greet(){
+document.getElementById("demo").innerHTML="HELLO WORLD"
+}
+
+function moveFunk(e){
+let x = e.clientX
+let y = e.clientY
+let coor = "Coordinates: ("+x+","+y+")"
+document.getElementById("demo").innerHTML = coor
+}
+
+function clearCoor(){
+document.getElementById("demo").innerHTML= " "
+}
+
+function moveIt(){
+let id = null
+const elem = document.getElementById("animate");
+let pos = 0
+clearInterval(id)
+id = setInterval(frame,5)
+
+function frame(){
+if (pos == 250){
+clearInterval(id)
+}
+else{
+pos++
+elem.style.top = pos + "px"
+elem.style.left = pos + "px"
+}
+}
+}
+
+function moveIt?(){
+let id = null
+const elem = document.getElementById("animate");
+let pos = 0
+clearInterval(id)
+id = setInterval(frame,5)
+
+function frame(){
+if (pos == 0){
+clearInterval(id)
+}
+else{
+pos--
+elem.style.bottom = pos +"px"
+elem.style.right = pos +"px"
+}
+}
+}
+
+
+</script>
+
+<style>
+#animate{
+background-color:lightgreen;
+width:50px;
+height:50px;
+position: absolute;
+}
+
+#container{
+background-color:lightblue;
+width:300px;
+height:300px;
+position: relative;
+}
+
+.button{
+border-radius:
+}
+</style>
+
+</body>
+</html>
