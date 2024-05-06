@@ -5,10 +5,9 @@
 basic javascript
 </title>
 </head>
+    <center>
 <body>
-<center>
 <h1 style="font-family:Madimi One; color:white;letter-spacing:0.1cm">JavaScript Output below</h1>
-
 <button type="button" onclick="addition()">add 6+5</button>
 <button type="button" onclick="subtraction()">subtract 6-5</button>
 <button type="button" onclick="multiply()">multiply 6*5</button>
@@ -17,15 +16,12 @@ basic javascript
 <p id="demo">This will change with Javascript</p>
 <div style="background:red;width:100px;height:100px" onmousemove="moveFunk(event)" onmouseout="clearCoor()">
 </div>
-
 <button type="button" onclick="moveIt()">Move It</button>
 <button type="button" onclick="moveBack()">Move Back</button>
 <button type="button" onclick="moveRight()">Move Right</button>
 <div id="container">
 <div id="animate"></div>
 </div>
-
-
 <script>
 function moveIt(){
 let id = null
@@ -40,11 +36,9 @@ clearInterval(id)
 pos++
 elem.style.top = pos + "px"
 elem.style.left = pos + "px"
-
 }
     }
 }
-
 function moveBack(){
 let id = null
 const elem = document.getElementById("animate")
@@ -60,7 +54,6 @@ elem.style.top = pos+"px"
 elem.style.left = pos+"px"
 }}
 }
-
 function moveRight(){
 let id = null
 const elem = document.getElementById("animate")
@@ -74,11 +67,8 @@ else{
 pos++
 elem.style.left = pos+"px"
 elem.style.bottom = pos +"px"
-
-
 }}
 }
-
     function addition(){
 document.getElementById("demo").innerHTML = 6+5
     }
@@ -100,14 +90,11 @@ let x = e.clientX
 let y= e.clientY
 let coor = "Coordinates:("+x+","+y+")"
 document.getElementById ("demo").innerHTML = coor
-
 }
-
 function clearCoor() {
 document.getElementById("demo").innerHTML = " "
 }
 </script>
-
 <style>
 #animate{
 background-color:#98fb98;
@@ -115,29 +102,25 @@ width:50px;
 height:50px;
 position: absolute;
 }
-
 #container{
 background-color:#ADD8E6;
 width:300px;
 height:300px;
 position: relative;
 }
-
 button{
  border: 2px solid red;
 border-radius: 5px;
  color: #AA336A;
 }
-
 body {
-  background-image: linear-gradient (to bottom right, pink, white);
-    
+  background-image: linear-gradient (to bottom right, pink, white);  
 }
   h1 {
   text-shadow: 2px 2px 5px white;
+  text-size: 10px;
 }
 </style>
-    </center>
-
+</center>
 </body>
 </html>
