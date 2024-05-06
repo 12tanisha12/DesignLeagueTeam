@@ -54,22 +54,7 @@ elem.style.top = pos+"px"
 elem.style.left = pos+"px"
 }}
 }
-function moveRight(){
-let id = null
-const elem = document.getElementById("animate")
-let pos = 0
-clearInterval(id)
-id = setInterval(frame,5)
-function frame(){
-if (pos == 250){
-clearInterval(id)}
-else{
-pos++
-elem.style.left = pos+"px"
-elem.style.bottom = pos +"px"
-}}
-}
-    function addition(){
+ function addition(){
 document.getElementById("demo").innerHTML = 6+5
     }
 function subtraction(){
@@ -84,7 +69,6 @@ document.getElementById("demo").innerHTML=6/5
 function greet(){
 document.getElementById("demo").innerHTML="hello world"
 }
-
 function moveFunk(e){
 let x = e.clientX
 let y= e.clientY
@@ -103,15 +87,15 @@ height:50px;
 position: absolute;
 }
 #container{
-background-color:blue;
+background-color: lightblue;
 width:300px;
 height:300px;
 position: relative;
 }
 button{
- border: 2px solid red;
+ border: 2px solid lightred;
 border-radius: 5px;
- color: red;
+color: red;
 }
 body {
   background-image: radial-gradient (pink, white, pink);  
