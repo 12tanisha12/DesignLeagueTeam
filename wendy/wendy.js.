@@ -58,6 +58,6 @@ this.pipe = () => {
   pipeSfx.play();
 };
 this.powerUp = () => {
-  powerUpSfx-play();
+  powerUpSfx.play();
  ｝；
 }
