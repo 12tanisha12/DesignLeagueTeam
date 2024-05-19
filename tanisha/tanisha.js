@@ -23,7 +23,7 @@ function Ninjas(name, age, height, color) {
   this.color = color;
 
   this.coin = () => {
-    //audio
+    // audio
     coinSfx.play();
 
     const button = document.querySelector('#btnCoin');
@@ -32,11 +32,11 @@ function Ninjas(name, age, height, color) {
     button.style.setProperty('border-color', '#2ecc71');
     button.style.setProperty('color', 'var(--bg-color)');
 
-    //coin effect
+    // coin effect
     const coinImg = document.createElement('img');
     coinImg.setAttribute('src', 'img/coin.png');
     coinImg.setAttribute('id', 'coin-img');
-    coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px)';
+    coinImg.style.transform = 'translate(-50%,calc(-100% - ' + ninja.height + 'px))';
     container.appendChild(coinImg);
 
     $('#coin-img').animate({ top: '60%', opacity: 1 }, 250);
@@ -44,7 +44,7 @@ function Ninjas(name, age, height, color) {
       $('#coin-img').remove();
       button.style.setProperty('background-color', 'transparent');
       button.style.setProperty('border-color', 'var(--accent-color)');
-      button.style.setProperty('color', 'var(--accent-color');
+      button.style.setProperty('color', 'var(--accent-color)');
     });
   };
   this.pipe = () => {
@@ -93,8 +93,8 @@ const promptUser = () => {
   };
 
   this.appendImg = () => {
-    img = document.createElement('img');
-    let size = 'width:' + height + 'px;height:' + height + 'px;';
+    const img = document.createElement('img');
+    const size = 'width:' + height + 'px;height:' + height + 'px;';
     if (color === 'blue') {
       img.setAttribute('src', 'img/ninja1.png');
       img.setAttribute('style', size);
