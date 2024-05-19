@@ -63,7 +63,7 @@ const promptUser = () => {
 
   this.getAge = () => {
     age = prompt('Pick an age:') || '18';
-    age = parseInt(age);
+    age = parseInt(age, 10);
     if (isNaN(age)) {
       this.getAge();
     } else {
@@ -73,7 +73,7 @@ const promptUser = () => {
 
   this.getHeight = () => {
     height = prompt('Pick height: 1, 2, 3, 4') || 4;
-    height = parseInt(height);
+    height = parseInt(height, 10);
     if (height === 1 || height === 2 || height === 3 || height === 4) {
       height = height * 64;
       return;
@@ -117,7 +117,7 @@ const promptUser = () => {
     btnContainer.innerHTML =
       "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe'>Pipe</button> \n <button onclick='ninja.powerUp()' id='btnPowerUp'>Power Up</button>";
     const newBtns = document.querySelectorAll('button');
-    for (let i = 0; i < newBtns.length; i++) {
+    for (let i = 0; i < newBtns.length; i += 1) {
       newBtns[i].style.setProperty('margin-left', '1.5rem');
     }
 
