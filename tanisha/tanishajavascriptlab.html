@@ -23,87 +23,33 @@ basic javascript
 <div id="container">
 <div id="animate"></div>
 </div>
-<script>
-function moveIt(){
-let id = null
-const elem = document.getElementById("animate")
-let pos = 0
-clearInterval(id)
-id = setInterval (frame,5)
-function frame(){
-if (pos == 250){
-clearInterval(id)
-} else{
-pos++
-elem.style.top = pos + "px"
-elem.style.left = pos + "px"
-}
-    }
-}
-function moveBack(){
-let id = null
-const elem = document.getElementById("animate")
-let pos = 250
-clearInterval(id)
-id = setInterval(frame,5)
-function frame(){
-if (pos == 0){
-clearInterval(id)}
-else{
-pos--
-elem.style.top = pos+"px"
-elem.style.left = pos+"px"
-}}
-}
- function addition(){
-document.getElementById("demo").innerHTML = 6+5
-    }
-function subtraction(){
-document.getElementById("demo").innerHTML = 6-5
-}
-function multiply(){
-document.getElementById("demo").innerHTML =6*5
-}
-function divide(){
-document.getElementById("demo").innerHTML=6/5
-}
-function greet(){
-document.getElementById("demo").innerHTML="hello world"
-}
-function moveFunk(e){
-let x = e.clientX
-let y= e.clientY
-let coor = "Coordinates:("+x+","+y+")"
-document.getElementById ("demo").innerHTML = coor
-}
-function clearCoor() {
-document.getElementById("demo").innerHTML = " "
-}
-</script>
-   
-<style>
-#animate{
-background-color: lightgreen;
-width:50px;
-height:50px;
-position: absolute;
-}
-#container{
-background-color: lightblue;
-width:300px;
-height:300px;
-position: relative;
-}
-button{
-border: 2px solid purple;
-border-radius: 5px;
-text-color: purple;
-background-color:white;
-}
-h1{
-  text-shadow: 2px 2px 5px white;
-  text-size: 10px;
-}
-</style>
+<div class="wrapper">
+    <div class="container">
+
+      <!-- Lab Info -->
+      <div class="top-container">
+        <div class="lab-info">
+          <h1>JavaScript - Ninja Lab</h1>
+          <h3>5/6/2024</h3>
+          <h3>Tanisha Tazreen</h3>
+          <hr>
+        </div>
+        <div class="btns-container">
+          <button onclick="promptUser()">New</button>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="content">
+
+
+      </div>
+
+    </div>
+  </div>
+  <script src="tanisha.js">
+  </script>
+  
 </body>
+
 </html>
